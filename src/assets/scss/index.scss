@@ -1,0 +1,30 @@
+@import "fonts";
+
+$bg-color: #ffffff;
+$text-color: #202124;
+$bg-color--dark: #202124;
+$text-color--dark: #ffffff;
+
+:root {
+  --bg-color: #{$bg-color};
+  --text-color: #{$text-color};
+
+  @mixin dark-theme {
+    --bg-color: #{$bg-color--dark};
+    --text-color: #{$text-color--dark};
+  }
+  body[theme-mode="DARK"] {
+    @include dark-theme();
+  }
+  body[theme-mode="SYSTEM"] {
+    @media (prefers-color-scheme: dark) {
+      @include dark-theme();
+    }
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

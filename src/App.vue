@@ -1,32 +1,31 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+  <div>
+    <h1>themeMode: {{ themeMode }}</h1>
+    <h2 v-for="(o, i) of listThemeMode" :key="i" @click="setThemeMode(o)">
+      {{ o }}
+    </h2>
     <router-view />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script lang="ts">
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+import { Vue, Component } from "vue-property-decorator";
+import { namespace } from "vuex-class";
+import { typeThemeMode } from "./store/modules/theme";
+const theme = namespace("theme");
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+@Component
+export default class App extends Vue {
+  @theme.State("themeMode") themeMode!: typeThemeMode;
+  @theme.Mutation("setThemeMode") setThemeMode!: any;
+  listThemeMode = typeThemeMode;
+  created() {
+    this.setThemeMode(typeThemeMode.LIGHT);
   }
 }
+</script>
+
+<style lang="scss">
+@import "@/assets/scss";
 </style>
