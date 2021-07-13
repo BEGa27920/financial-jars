@@ -1,9 +1,42 @@
 @import "fonts";
 
-$bg-color: #ffffff;
-$text-color: #202124;
-$bg-color--dark: #202124;
-$text-color--dark: #ffffff;
+$red-50: #FBE8E6;
+$red-100: #FFC8BA;
+$red-200: #FFA48E;
+$red-300: #FE8062;
+$red-400: #FD6341;
+$red-500: #FC4422;
+$blue-50: #E0F7F8;
+$blue-100: #B3ECED;
+$blue-200: #84DFE2;
+$blue-300: #55D1D8;
+$blue-400: #36C7D0;
+$blue-500: #21BDCA;
+$purple-50: #E9EBFA;
+$purple-100: #C8CDF2;
+$purple-200: #A4ADE9;
+$purple-300: #7E8CE0;
+$purple-400: #6171D9;
+$purple-500: #4657CE;
+$green-50: #E1F7F1;
+$green-100: #B5EADB;
+$green-200: #83DEC4;
+$green-300: #4ACFAC;
+$green-400: #01C29A;
+$green-500: #00B589;
+$orange-50: #FFF2E2;
+$orange-100: #FFDCB7;
+$orange-200: #FFC68A;
+$orange-300: #FFAF5F;
+$orange-400: #FE9E44;
+$orange-500: #FD8E32;
+$dark: #121212;
+$light: #ffffff;
+
+$bg-color: $light;
+$text-color: $dark;
+$bg-color--dark: $dark;
+$text-color--dark: $light;
 
 :root {
   --bg-color: #{$bg-color};

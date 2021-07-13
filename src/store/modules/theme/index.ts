@@ -6,6 +6,7 @@ export enum typeThemeMode {
   LIGHT = "LIGHT",
   DARK = "DARK",
   SYSTEM = "SYSTEM",
+  BACKGROUND = "BACKGROUND",
 }
 
 export default {
