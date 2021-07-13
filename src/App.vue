@@ -1,11 +1,5 @@
 <template>
-  <div>
-    <h1>themeMode: {{ themeMode }}</h1>
-    <h2 v-for="(o, i) of listThemeMode" :key="i" @click="setThemeMode(o)">
-      {{ o }}
-    </h2>
-    <router-view />
-  </div>
+  <router-view />
 </template>
 
 <script lang="ts">
@@ -17,11 +11,9 @@ const theme = namespace("theme");
 
 @Component
 export default class App extends Vue {
-  @theme.State("themeMode") themeMode!: typeThemeMode;
   @theme.Mutation("setThemeMode") setThemeMode!: any;
-  listThemeMode = typeThemeMode;
   created() {
-    this.setThemeMode(typeThemeMode.LIGHT);
+    this.setThemeMode(typeThemeMode.DARK);
   }
 }
 </script>

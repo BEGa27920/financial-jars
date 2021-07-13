@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { typeThemeMode } from ".";
 
 const body = document.querySelector("body");

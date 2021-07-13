@@ -1,0 +1,70 @@
+$orange-50: #fbe8e6;
+$orange-100: #ffc8ba;
+$orange-200: #ffa48e;
+$orange-300: #fe8062;
+$orange-400: #fd6341;
+$orange-500: #fc4422;
+$orange--light: $orange-200;
+$orange--dark: $orange-200;
+
+$blue-50: #e0f7f8;
+$blue-100: #b3eced;
+$blue-200: #84dfe2;
+$blue-300: #55d1d8;
+$blue-400: #36c7d0;
+$blue-500: #21bdca;
+$blue--light: $blue-400;
+$blue--dark: $blue-200;
+
+$purple-50: #e9ebfa;
+$purple-100: #c8cdf2;
+$purple-200: #a4ade9;
+$purple-300: #7e8ce0;
+$purple-400: #6171d9;
+$purple-500: #4657ce;
+$purple--light: $purple-300;
+$purple--dark: $purple-200;
+
+$green-50: #e1f7f1;
+$green-100: #b5eadb;
+$green-200: #83dec4;
+$green-300: #4acfac;
+$green-400: #01c29a;
+$green-500: #00b589;
+$green--light: $green-300;
+$green--dark: $green-200;
+
+$yellow-50: #fff2e2;
+$yellow-100: #ffdcb7;
+$yellow-200: #ffc68a;
+$yellow-300: #ffaf5f;
+$yellow-400: #fe9e44;
+$yellow-500: #fd8e32;
+$yellow--light: $yellow-300;
+$yellow--dark: $yellow-200;
+
+$dark: #121212;
+$light: #ffffff;
+
+$bg-color: $light;
+$text-color: $dark;
+$bg-color--dark: $dark;
+$text-color--dark: $light;
+
+:root {
+  --card-color--1: white;
+  --card-color--2: white;
+
+  @mixin dark-theme {
+    --card-color--1: #1e1e1e;
+    --card-color--2: #383838;
+  }
+  body[theme-mode="DARK"] {
+    @include dark-theme();
+  }
+  body[theme-mode="SYSTEM"] {
+    @media (prefers-color-scheme: dark) {
+      @include dark-theme();
+    }
+  }
+}
