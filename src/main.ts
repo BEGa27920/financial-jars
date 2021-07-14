@@ -4,9 +4,14 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
-/* Bootstrap 5 */
-// import "bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
+/* Vue SVG */
+import InlineSvg from "vue-inline-svg";
+Vue.component("v-svg", InlineSvg);
+
+/* Vue Material */
+// import {} from "vue-material/dist/components";
+import "vue-material/dist/vue-material.min.css";
+import "vue-material/dist/theme/default.css";
 
 Vue.config.productionTip = false;
 

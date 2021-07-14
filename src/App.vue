@@ -13,7 +13,7 @@ const theme = namespace("theme");
 export default class App extends Vue {
   @theme.Mutation("setThemeMode") setThemeMode!: any;
   created() {
-    this.setThemeMode(typeThemeMode.DARK);
+    this.setThemeMode(typeThemeMode.SYSTEM);
   }
 }
 </script>

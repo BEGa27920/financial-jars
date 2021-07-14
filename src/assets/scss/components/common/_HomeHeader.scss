@@ -1,4 +1,22 @@
 .fj-header {
-  background-color: var(--card-color--2);
+  background-color: var(--card-color--1);
   width: auto;
+  border-radius: 6px;
+
+  &__btn-menu {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--card-color--8);
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    & > svg {
+      --svg-size: 1.3rem;
+      fill: var(--yellow);
+      width: var(--svg-size);
+      height: var(--svg-size);
+    }
+  }
 }

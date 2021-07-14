@@ -1,0 +1,99 @@
+// @import "colors";
+@import "../../../node_modules/vue-material/src/components/MdElevation/mixins.scss";
+
+.card-1 {
+  background-color: var(--card-color--1);
+  @include md-elevation(1);
+}
+.card-2 {
+  background-color: var(--card-color--2);
+  @include md-elevation(2);
+}
+.card-3 {
+  background-color: var(--card-color--3);
+  @include md-elevation(3);
+}
+.card-4 {
+  background-color: var(--card-color--4);
+  @include md-elevation(4);
+}
+.card-5 {
+  background-color: var(--card-color--6);
+  @include md-elevation(5);
+}
+.card-6 {
+  background-color: var(--card-color--6);
+  @include md-elevation(6);
+}
+.card-7 {
+  background-color: var(--card-color--8);
+  @include md-elevation(7);
+}
+.card-8 {
+  background-color: var(--card-color--8);
+  @include md-elevation(8);
+}
+.card-9 {
+  background-color: var(--card-color--12);
+  @include md-elevation(9);
+}
+.card-10 {
+  background-color: var(--card-color--12);
+  @include md-elevation(10);
+}
+.card-11 {
+  background-color: var(--card-color--12);
+  @include md-elevation(11);
+}
+.card-12 {
+  background-color: var(--card-color--12);
+  @include md-elevation(12);
+}
+.card-13 {
+  background-color: var(--card-color--16);
+  @include md-elevation(13);
+}
+.card-14 {
+  background-color: var(--card-color--16);
+  @include md-elevation(14);
+}
+.card-15 {
+  background-color: var(--card-color--16);
+  @include md-elevation(15);
+}
+.card-16 {
+  background-color: var(--card-color--16);
+  @include md-elevation(16);
+}
+.card-17 {
+  background-color: var(--card-color--24);
+  @include md-elevation(17);
+}
+.card-18 {
+  background-color: var(--card-color--24);
+  @include md-elevation(18);
+}
+.card-19 {
+  background-color: var(--card-color--24);
+  @include md-elevation(19);
+}
+.card-20 {
+  background-color: var(--card-color--24);
+  @include md-elevation(20);
+}
+.card-21 {
+  background-color: var(--card-color--24);
+  @include md-elevation(21);
+}
+.card-22 {
+  background-color: var(--card-color--24);
+  @include md-elevation(22);
+}
+.card-23 {
+  background-color: var(--card-color--24);
+  @include md-elevation(23);
+}
+.card-24 {
+  background-color: var(--card-color--24);
+  @include md-elevation(24);
+}

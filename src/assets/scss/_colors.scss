@@ -51,13 +51,48 @@ $text-color: $dark;
 $bg-color--dark: $dark;
 $text-color--dark: $light;
 
+/*  */
+$card-color--light-1: white;
+$card-color--light-2: white;
+$card-color--light-3: white;
+$card-color--light-4: white;
+$card-color--light-6: white;
+$card-color--light-8: white;
+$card-color--light-12: white;
+$card-color--light-16: white;
+$card-color--light-24: white;
+
+$card-color--dark-1: #1d1d1d;
+$card-color--dark-2: #212121;
+$card-color--dark-3: #242424;
+$card-color--dark-4: #272727;
+$card-color--dark-6: #2c2c2c;
+$card-color--dark-8: #2d2d2d;
+$card-color--dark-12: #323232;
+$card-color--dark-16: #353535;
+$card-color--dark-24: #383838;
+
 :root {
-  --card-color--1: white;
-  --card-color--2: white;
+  --card-color--1: #{$card-color--light-1};
+  --card-color--2: #{$card-color--light-2};
+  --card-color--3: #{$card-color--light-3};
+  --card-color--4: #{$card-color--light-4};
+  --card-color--6: #{$card-color--light-6};
+  --card-color--8: #{$card-color--light-8};
+  --card-color--12: #{$card-color--light-12};
+  --card-color--16: #{$card-color--light-16};
+  --card-color--24: #{$card-color--light-24};
 
   @mixin dark-theme {
-    --card-color--1: #1e1e1e;
-    --card-color--2: #383838;
+    --card-color--1: #{$card-color--dark-1};
+    --card-color--2: #{$card-color--dark-2};
+    --card-color--3: #{$card-color--dark-3};
+    --card-color--4: #{$card-color--dark-4};
+    --card-color--6: #{$card-color--dark-6};
+    --card-color--8: #{$card-color--dark-8};
+    --card-color--12: #{$card-color--dark-12};
+    --card-color--16: #{$card-color--dark-16};
+    --card-color--24: #{$card-color--dark-24};
   }
   body[theme-mode="DARK"] {
     @include dark-theme();
