@@ -5,15 +5,12 @@
 <script lang="ts">
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Vue, Component } from "vue-property-decorator";
-import { namespace } from "vuex-class";
-import { typeThemeMode } from "./store/modules/theme";
-const theme = namespace("theme");
+import load from "@/services/load";
 
 @Component
 export default class App extends Vue {
-  @theme.Mutation("setThemeMode") setThemeMode!: any;
   created() {
-    this.setThemeMode(typeThemeMode.SYSTEM);
+    load.load(this);
   }
 }
 </script>

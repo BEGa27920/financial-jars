@@ -14,7 +14,8 @@
   --green: #{$green--light};
   --orange: #{$orange--light};
 
-  @mixin dark-theme {
+  body.dark-mode,
+  body.system-dark {
     --bg-color: #{$bg-color--dark};
     --text-color: #{$text-color--dark};
     --yellow: #{$yellow--dark};
@@ -22,14 +23,6 @@
     --purple: #{$purple--dark};
     --green: #{$green--dark};
     --orange: #{$orange--dark};
-  }
-  body[theme-mode="DARK"] {
-    @include dark-theme();
-  }
-  body[theme-mode="SYSTEM"] {
-    @media (prefers-color-scheme: dark) {
-      @include dark-theme();
-    }
   }
 }
 

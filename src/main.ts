@@ -10,8 +10,12 @@ Vue.component("v-svg", InlineSvg);
 
 /* Vue Material */
 // import {} from "vue-material/dist/components";
-import "vue-material/dist/vue-material.min.css";
-import "vue-material/dist/theme/default.css";
+// import "vue-material/dist/vue-material.min.css";
+// import "vue-material/dist/theme/default.css";
+
+/* Vue Perfect Scrollbar  */
+import VuePerfectScrollbar from "vue-perfect-scrollbar";
+Vue.component("v-scroll", VuePerfectScrollbar);
 
 Vue.config.productionTip = false;
 

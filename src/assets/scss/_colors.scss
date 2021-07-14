@@ -1,3 +1,5 @@
+@import "assets/scss/class";
+
 $orange-50: #fbe8e6;
 $orange-100: #ffc8ba;
 $orange-200: #ffa48e;
@@ -83,7 +85,8 @@ $card-color--dark-24: #383838;
   --card-color--16: #{$card-color--light-16};
   --card-color--24: #{$card-color--light-24};
 
-  @mixin dark-theme {
+  body.dark-mode,
+  body.system-dark {
     --card-color--1: #{$card-color--dark-1};
     --card-color--2: #{$card-color--dark-2};
     --card-color--3: #{$card-color--dark-3};
@@ -93,13 +96,5 @@ $card-color--dark-24: #383838;
     --card-color--12: #{$card-color--dark-12};
     --card-color--16: #{$card-color--dark-16};
     --card-color--24: #{$card-color--dark-24};
-  }
-  body[theme-mode="DARK"] {
-    @include dark-theme();
-  }
-  body[theme-mode="SYSTEM"] {
-    @media (prefers-color-scheme: dark) {
-      @include dark-theme();
-    }
   }
 }

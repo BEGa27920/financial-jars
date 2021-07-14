@@ -1,22 +1,29 @@
+@import "assets/scss/class";
+
 .fj-header {
-  background-color: var(--card-color--1);
+  @extend .card-1;
   width: auto;
-  border-radius: 6px;
+  border-radius: 8px;
 
   &__btn-menu {
     width: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--card-color--8);
-    padding: 8px;
-    border-radius: 6px;
+    background-color: transparent;
+    padding: 12px;
+    border-radius: 50%;
     cursor: pointer;
+
     & > svg {
-      --svg-size: 1.3rem;
+      --svg-size: 18px;
       fill: var(--yellow);
       width: var(--svg-size);
       height: var(--svg-size);
     }
+  }
+
+  @include dark-mode {
+    background-color: var(--card-color--4);
   }
 }

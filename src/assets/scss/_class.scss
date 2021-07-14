@@ -1,5 +1,37 @@
-// @import "colors";
+// @import "assets/scss/class";
 @import "../../../node_modules/vue-material/src/components/MdElevation/mixins.scss";
+
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+@mixin dark-mode {
+  body.dark-mode &,
+  body.system-dark & {
+    @content;
+  }
+}
 
 .card-1 {
   background-color: var(--card-color--1);
