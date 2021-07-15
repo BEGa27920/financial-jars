@@ -1,6 +1,6 @@
 <template>
-  <div class="fj-header p-1 mt-2 md-scrollbar md-theme-demo-light">
-    <div class="fj-header__btn-menu">
+  <div class="fj-header p-1 mt-2">
+    <div v-ripple class="fj-header__btn-menu">
       <v-svg :src="require('@/assets/icons/bars.svg')" />
     </div>
   </div>

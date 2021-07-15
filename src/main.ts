@@ -17,6 +17,10 @@ Vue.component("v-svg", InlineSvg);
 import VuePerfectScrollbar from "vue-perfect-scrollbar";
 Vue.component("v-scroll", VuePerfectScrollbar);
 
+/* V-Wave | V-Ripple */
+import VWave from "v-wave";
+Vue.use(VWave, { directive: "ripple" });
+
 Vue.config.productionTip = false;
 
 new Vue({
