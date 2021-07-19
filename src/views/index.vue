@@ -1,6 +1,7 @@
 <template>
   <div id="home-page" class="container">
     <FJHeader />
+    <md-button>Alo alo</md-button>
   </div>
 </template>
 

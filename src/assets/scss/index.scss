@@ -1,5 +1,6 @@
 @import "fonts";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+// @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "pages";
 @import "components/common";
 @import "colors";
@@ -13,6 +14,7 @@
   --purple: #{$purple--light};
   --green: #{$green--light};
   --orange: #{$orange--light};
+  --primary: #{$primary--light};
 
   body.dark-mode,
   body.system-dark {
@@ -23,6 +25,7 @@
     --purple: #{$purple--dark};
     --green: #{$green--dark};
     --orange: #{$orange--dark};
+    --primary: #{$primary--dark};
   }
 }
 
