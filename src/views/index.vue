@@ -1,7 +1,11 @@
 <template>
   <div id="home-page" class="container">
-    <FJHeader />
-    <md-button>Alo alo</md-button>
+    <div class="row">
+      <div class="col-12 col-xl-3 hp-left">Alo alo0</div>
+      <div class="col-12 col-xl-9 hp-right">
+        <FJHeader />
+      </div>
+    </div>
   </div>
 </template>
 

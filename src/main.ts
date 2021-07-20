@@ -9,10 +9,10 @@ import InlineSvg from "vue-inline-svg";
 Vue.component("v-svg", InlineSvg);
 
 /* Vue Material */
-import { MdButton } from "vue-material/dist/components";
-import "vue-material/dist/vue-material.min.css";
-import "vue-material/dist/theme/default.css";
-Vue.use(MdButton);
+// import { MdButton } from "vue-material/dist/components";
+// import "vue-material/dist/vue-material.min.css";
+// import "vue-material/dist/theme/default.css";
+// Vue.use(MdButton);
 
 /* Vue Perfect Scrollbar  */
 import VuePerfectScrollbar from "vue-perfect-scrollbar";
