@@ -1,7 +1,7 @@
 <template>
   <div ref="navLeft" :class="isOpenNavLeft ? 'open' : 'hidden'">
     <v-scroll class="ps">
-      <div class="hp-left__container" style="height: 200vh">Hello World</div>
+      <div class="hp-left__container">Hello World</div>
     </v-scroll>
   </div>
 </template>

@@ -9,9 +9,8 @@
         @click.stop="toggleIsOpenNavLeft"
       />
 
-      <div class="col-12 col-xl-9 hp-right pt-2">
+      <div class="col-12 col-xl-9 hp-right">
         <FJHeader />
-        <div class="hp-right__header-filter" />
         Alo alo
         <div style="height: 300vh"></div>
       </div>

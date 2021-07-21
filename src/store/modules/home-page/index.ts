@@ -3,7 +3,7 @@
 export default {
   namespaced: true,
   state: {
-    isOpenNavLeft: true,
+    isOpenNavLeft: false,
   },
   mutations: {
     setIsOpenNavLeft(state: any, value: boolean) {
