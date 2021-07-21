@@ -1,4 +1,5 @@
 @import "assets/scss/class";
+@import "assets/scss/colors";
 
 .fj-header {
   @extend .card-4;
@@ -6,6 +7,9 @@
   border-radius: 8px;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 8px;
+  z-index: 1;
 
   &__right {
     display: flex;

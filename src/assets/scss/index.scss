@@ -27,6 +27,8 @@
     --orange: #{$orange--dark};
     --primary: #{$primary--dark};
   }
+
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {

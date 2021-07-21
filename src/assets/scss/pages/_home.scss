@@ -1,8 +1,90 @@
+@import "assets/scss/class";
+
 #home-page {
   position: relative;
 
   .hp {
     &-left {
+      position: fixed;
+      z-index: 1050;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      transform: translateX(-100%);
+      transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+      @include m-xl {
+        max-width: 300px;
+        width: calc(100% - 50px);
+      }
+      @include xl {
+        position: sticky;
+        bottom: unset;
+        right: unset;
+        height: 100vh;
+        padding: 0 12px;
+        transform: translateX(0%);
+      }
+
+      & > .ps {
+        @extend .card-4;
+        z-index: 1;
+        height: 100%;
+        transition: box-shadow 0.3s ease-in-out;
+
+        @include xl {
+          border-radius: 8px;
+        }
+      }
+
+      &__bg-filter {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0;
+        transition: opacity 0.3s linear;
+
+        &.open {
+          opacity: 0.5;
+        }
+
+        @include xl {
+          display: none;
+        }
+      }
+
+      &.open {
+        transform: translateX(0%);
+      }
+      &.hidden > .ps {
+        @include m-xl {
+          box-shadow: none;
+        }
+      }
+
+      &__container {
+        position: relative;
+      }
+    }
+
+    &-right {
+      position: relative;
+      z-index: 0;
+
+      &__header-filter {
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 18px;
+        background-color: var(--card-color--4);
+        z-index: 0;
+      }
     }
   }
 }

@@ -26,6 +26,31 @@
     @content;
   }
 }
+@mixin m-sm {
+  @media (max-width: 575.98px) {
+    @content;
+  }
+}
+@mixin m-md {
+  @media (max-width: 767.98px) {
+    @content;
+  }
+}
+@mixin m-lg {
+  @media (max-width: 991.98px) {
+    @content;
+  }
+}
+@mixin m-xl {
+  @media (max-width: 1199.98px) {
+    @content;
+  }
+}
+@mixin m-xxl {
+  @media (max-width: 1399.98px) {
+    @content;
+  }
+}
 @mixin dark-mode {
   body.dark-mode &,
   body.system-dark & {

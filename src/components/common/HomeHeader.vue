@@ -1,5 +1,5 @@
 <template>
-  <div class="fj-header p-2 ps-3 pe-3 mt-2">
+  <div class="fj-header p-2 ps-3 pe-3">
     <div v-ripple class="fj-header__btn-menu" @click.stop="toggleIsOpenNavLeft">
       <v-svg :src="require('@/assets/icons/bars.svg')" />
     </div>
