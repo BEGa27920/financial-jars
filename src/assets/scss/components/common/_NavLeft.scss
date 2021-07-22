@@ -1,0 +1,80 @@
+@import "assets/scss/class";
+@import "assets/scss/colors";
+
+.hp-left {
+  &__logo {
+    padding: 0px 60px;
+    margin-top: 34px;
+  }
+
+  &__nav-item {
+    --space: 18px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 18px;
+    padding: 18px var(--space); //20px
+    text-decoration: none;
+    color: $text-color--2;
+    font-size: 1rem; //1.25rem
+    font-weight: 400;
+    letter-spacing: 0.05rem;
+
+    & > svg {
+      --size: 20px; //30px
+      flex: 0;
+      min-width: var(--size);
+      min-height: var(--size);
+      max-width: var(--size);
+      max-height: var(--size);
+      padding-right: var(--space);
+      color: $text-color--2;
+    }
+
+    & > span {
+      flex: 1;
+      display: inline-block;
+    }
+
+    @include dark-mode {
+      color: $text-color--2--dark;
+      & > svg {
+        color: $text-color--2--dark;
+      }
+    }
+
+    @include xxl {
+      --space: 24px;
+      font-size: 1.25rem; //1.25rem
+      padding: 24px var(--space); //20px
+      & > svg {
+        --size: 24px;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($primary--light, 0.1);
+
+      @include dark-mode {
+        background-color: rgba($primary--dark, 0.1);
+      }
+    }
+
+    &.router-link-active,
+    &.active {
+      background-color: transparentize($primary--light, 0.8);
+      color: $primary--light;
+      & > svg {
+        color: $primary--light;
+      }
+
+      @include dark-mode {
+        background-color: transparentize($primary--dark, 0.8);
+        color: $primary--dark;
+        & > svg {
+          color: $primary--dark;
+        }
+      }
+    }
+  }
+}

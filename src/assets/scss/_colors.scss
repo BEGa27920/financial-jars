@@ -45,22 +45,24 @@ $yellow-500: #fd8e32;
 $yellow--light: $yellow-300;
 $yellow--dark: $yellow-200;
 
-$primary-50: $yellow-50;
-$primary-100: $yellow-100;
-$primary-200: $yellow-200;
-$primary-300: $yellow-300;
-$primary-400: $yellow-400;
-$primary-500: $yellow-500;
-$primary--light: $yellow-300;
-$primary--dark: $yellow-200;
+$primary-50: #bce9d5;
+$primary-100: #8fdbbb;
+$primary-200: #5acda0;
+$primary-300: #1ec28b;
+$primary-400: #00b777;
+$primary-500: #00a76b;
+$primary--light: $primary-300;
+$primary--dark: $primary-200;
 
 $dark: #121212;
 $light: #ffffff;
 
 $bg-color: $light;
-$text-color: $dark;
 $bg-color--dark: $dark;
+$text-color: $dark;
 $text-color--dark: $light;
+$text-color--2: transparentize($text-color, 0.3);
+$text-color--2--dark: transparentize($text-color--dark, 0.3);
 
 /*  */
 $card-color--light-0: $light;
