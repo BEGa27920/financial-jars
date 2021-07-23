@@ -6,18 +6,24 @@
           <v-svg :src="require('@/assets/icons/Travigo.svg')" />
         </div>
 
-        <a
-          href="#"
+        <router-link
           v-for="(o, i) of menuLeft"
           :key="i"
-          :class="{ active: o.active }"
-          class="hp-left__nav-item mx-3 mx-xxl-4"
-          v-ripple="{ color: o.active ? 'currentColor' : 'var(--primary)' }"
+          :to="o.router"
+          v-slot="{ href, navigate, isActive }"
+          custom
         >
-          <!-- :to="{ name: o.router }" -->
-          <v-svg :src="o.active ? o.iconActive : o.icon" />
-          <span>{{ o.label }}</span>
-        </a>
+          <a
+            @click="navigate"
+            :href="href"
+            :class="{ active: isActive }"
+            class="hp-left__nav-item mx-3 mx-xxl-4"
+            v-ripple="{ color: isActive ? 'currentColor' : 'var(--primary)' }"
+          >
+            <v-svg :src="isActive ? o.iconActive : o.icon" />
+            <span>{{ o.label }}</span>
+          </a>
+        </router-link>
       </div>
     </v-scroll>
   </div>

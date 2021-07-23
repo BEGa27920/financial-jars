@@ -16,7 +16,10 @@
         </div>
 
         <div v-ripple class="fj-header__plus-button ms-3">
-          <v-svg :src="require('@/assets/icons/receipt.svg')" />
+          <v-svg
+            style="transform: rotate(270deg)"
+            :src="require('@/assets/icons/ticket-regular.svg')"
+          />
         </div>
 
         <div class="fj-header__profile-user ms-3">

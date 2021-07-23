@@ -11,7 +11,7 @@
 
       <div class="col-12 col-xl-9 hp-right">
         <FJHeader />
-        Alo alo
+        <router-view />
         <div style="height: 300vh"></div>
       </div>
     </div>
