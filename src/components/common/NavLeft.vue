@@ -9,7 +9,7 @@
         <router-link
           v-for="(o, i) of menuLeft"
           :key="i"
-          :to="o.router"
+          :to="{ name: o.router }"
           v-slot="{ href, navigate, isActive }"
           custom
         >

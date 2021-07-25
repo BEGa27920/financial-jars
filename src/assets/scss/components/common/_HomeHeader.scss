@@ -83,9 +83,9 @@
     overflow: hidden;
   }
 
-  &__plus-button {
+  &__button {
     @include item-button();
-    padding: 8px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +93,24 @@
 
     & > svg {
       color: var(--primary);
+    }
+
+    &.state-cloud {
+      position: relative;
+
+      > svg,
+      > .fj-progress-spinner {
+        color: var(--primary);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        margin: auto;
+
+        transition: opacity 0.3s;
+      }
     }
   }
 

@@ -1,0 +1,71 @@
+@import "assets/scss/class";
+@import "assets/scss/colors";
+
+#financial-jar {
+  .fj-there-are-no-jars {
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: calc(100vh - 82px);
+
+    > div {
+      height: fit-content;
+      margin: auto;
+      padding: 100px 0;
+
+      > div:nth-child(2) {
+        color: var(--text-color--2);
+      }
+
+      > a:nth-child(3) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: transparent;
+        width: fit-content;
+        margin: 0 auto;
+        cursor: pointer;
+        text-decoration: none;
+        color: var(--text-color);
+        padding: 24px;
+        border-radius: 18px;
+        box-shadow: 0 0px 1px -1px rgb(0 0 0 / 20%),
+          0 0px 1px 0 rgb(0 0 0 / 14%), 0 0px 3px 0 rgb(0 0 0 / 12%);
+        transition: background-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+        &:hover {
+          @extend .card-2;
+        }
+
+        @include dark-mode {
+          box-shadow: 0 0px 1px -1px rgb(255 255 255 / 20%),
+            0 0px 1px 0 rgb(255 255 255 / 14%), 0 0px 3px 0 rgb(255 255 255 / 12%);
+        }
+
+        > svg {
+          color: var(--primary);
+          --size: 6rem;
+          width: var(--size);
+          height: var(--size);
+          border-radius: var(--size);
+          background-color: transparentize($primary--light, 0.8);
+
+          @include dark-mode {
+            background-color: transparentize($primary--dark, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  .financial-jar {
+
+    /* Create Page */
+    &--create {
+      position: relative;
+    }
+  }
+}

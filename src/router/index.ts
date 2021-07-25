@@ -23,6 +23,19 @@ const routes: Array<RouteConfig> = [
         path: "financial-jar",
         name: "financial-jar",
         component: () => import("@/views/financial-jar/index.vue"),
+        redirect: "financial-jar/base",
+        children: [
+          {
+            path: "base",
+            name: "financial-jar--base",
+            component: () => import("@/views/financial-jar/base.vue"),
+          },
+          {
+            path: "create",
+            name: "financial-jar--create",
+            component: () => import("@/views/financial-jar/create.vue"),
+          },
+        ],
       },
       {
         path: "type-of-spending",

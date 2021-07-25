@@ -9,6 +9,7 @@
 :root {
   --bg-color: #{$bg-color};
   --text-color: #{$text-color};
+  --text-color--2: #{$text-color--2};
   --yellow: #{$yellow--light};
   --blue: #{$blue--light};
   --purple: #{$purple--light};
@@ -20,6 +21,7 @@
   body.system-dark {
     --bg-color: #{$bg-color--dark};
     --text-color: #{$text-color--dark};
+    --text-color--2: #{$text-color--2--dark};
     --yellow: #{$yellow--dark};
     --blue: #{$blue--dark};
     --purple: #{$purple--dark};

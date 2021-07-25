@@ -6,6 +6,7 @@ Vue.use(Vuex);
 /* Modules */
 import homePage from "./modules/home-page";
 import theme from "./modules/theme";
+import finalcialJar from "./modules/finalcial-jar";
 
 export default new Vuex.Store({
   state: {},
@@ -15,5 +16,6 @@ export default new Vuex.Store({
   modules: {
     theme,
     homePage,
+    jar: finalcialJar,
   },
 });

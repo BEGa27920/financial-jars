@@ -12,7 +12,6 @@
       <div class="col-12 col-xl-9 hp-right">
         <FJHeader />
         <router-view />
-        <div style="height: 300vh"></div>
       </div>
     </div>
   </div>

@@ -154,3 +154,124 @@
   background-color: var(--card-color--24);
   @include md-elevation(24);
 }
+
+.card-d-1 {
+  @include dark-mode {
+    @extend .card-1;
+  }
+}
+.card-d-2 {
+  @include dark-mode {
+    @extend .card-2;
+  }
+}
+.card-d-3 {
+  @include dark-mode {
+    @extend .card-3;
+  }
+}
+.card-d-4 {
+  @include dark-mode {
+    @extend .card-4;
+  }
+}
+.card-d-5 {
+  @include dark-mode {
+    @extend .card-5;
+  }
+}
+.card-d-6 {
+  @include dark-mode {
+    @extend .card-6;
+  }
+}
+.card-d-7 {
+  @include dark-mode {
+    @extend .card-7;
+  }
+}
+.card-d-8 {
+  @include dark-mode {
+    @extend .card-8;
+  }
+}
+.card-d-9 {
+  @include dark-mode {
+    @extend .card-9;
+  }
+}
+.card-d-10 {
+  @include dark-mode {
+    @extend .card-10;
+  }
+}
+.card-d-11 {
+  @include dark-mode {
+    @extend .card-11;
+  }
+}
+.card-d-12 {
+  @include dark-mode {
+    @extend .card-12;
+  }
+}
+.card-d-13 {
+  @include dark-mode {
+    @extend .card-13;
+  }
+}
+.card-d-14 {
+  @include dark-mode {
+    @extend .card-14;
+  }
+}
+.card-d-15 {
+  @include dark-mode {
+    @extend .card-15;
+  }
+}
+.card-d-16 {
+  @include dark-mode {
+    @extend .card-16;
+  }
+}
+.card-d-17 {
+  @include dark-mode {
+    @extend .card-17;
+  }
+}
+.card-d-18 {
+  @include dark-mode {
+    @extend .card-18;
+  }
+}
+.card-d-19 {
+  @include dark-mode {
+    @extend .card-19;
+  }
+}
+.card-d-20 {
+  @include dark-mode {
+    @extend .card-20;
+  }
+}
+.card-d-21 {
+  @include dark-mode {
+    @extend .card-21;
+  }
+}
+.card-d-22 {
+  @include dark-mode {
+    @extend .card-22;
+  }
+}
+.card-d-23 {
+  @include dark-mode {
+    @extend .card-23;
+  }
+}
+.card-d-24 {
+  @include dark-mode {
+    @extend .card-24;
+  }
+}
